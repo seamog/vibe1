@@ -1,20 +1,38 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# IP 정보 뷰어
 
-# Run and deploy your AI Studio app
+내 컴퓨터의 로컬 IP와 공인 IP를 보여주는 간단한 윈도우 앱입니다.
 
-This contains everything you need to run your app locally.
+## 기능
 
-View your app in AI Studio: https://ai.studio/apps/drive/1GgQ3zQgUVU5W_Y9-oBuAeru4L3ohmCfa
+- 로컬 IP 주소 표시
+- 공인 IP 주소 표시
+- 컴퓨터 이름 표시
+- 마지막 업데이트 시간 표시
+- 새로고침 기능
+- 창 최소화/닫기 기능
 
-## Run Locally
+## 설치 및 실행
 
-**Prerequisites:**  Node.js
+1. Python 3.7 이상이 설치되어 있어야 합니다.
 
+2. 필요한 패키지 설치:
+```bash
+pip install -r requirements.txt
+```
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+3. 앱 실행:
+```bash
+python ip_viewer.py
+```
+
+## 사용법
+
+- 앱을 실행하면 자동으로 IP 정보를 로드합니다.
+- "새로고침" 버튼을 클릭하여 최신 정보로 업데이트할 수 있습니다.
+- 창 우상단의 X 버튼으로 앱을 종료할 수 있습니다.
+- 창 우상단의 _ 버튼으로 창을 최소화할 수 있습니다.
+
+## 주의사항
+
+- 공인 IP 조회는 인터넷 연결이 필요합니다.
+- 방화벽이나 네트워크 설정에 따라 일부 기능이 제한될 수 있습니다.
