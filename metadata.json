@@ -1,0 +1,5 @@
+{
+  "name": "My IP Address Finder",
+  "description": "A simple and elegant web application to quickly find and display your public IP address.",
+  "requestFramePermissions": []
+}
